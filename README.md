@@ -34,4 +34,5 @@ you are done with your submission.
    "AC" - Boolean, If airconditioned
    "FirePlace" - Boolean, If has fireplace
    "Neighborhood" - , Name of neighborhood
-2. Our variable of special interest is year built. 
+2. Our variable of special interest is year built.
+3. THe main variable is the price of the house. The range is $0-20,500,000. There is no oddities in this graph
