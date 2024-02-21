@@ -25,7 +25,7 @@ you are done with your submission.
    "Sale Date" - Int, Date sold, 2017-2022
    "Sale Price" - Double, Cost of house, 0-20,500,000
    "Multisale" - N/A
-   "Year Built" - Int, Year house was built, 1950-2022
+   "Year Built" - Int, Year house was built, 1880-2022
    "Acres" - Float, Property size, 0-12
    "Total Living Area (sf)" - Int, Size of house, 0-6,007
    "Bedrooms" - Int, Number of bedrooms, 1-10
