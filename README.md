@@ -28,7 +28,7 @@ you are done with your submission.
    "Year Built" - Int, Year house was built, 1950-2022
    "Acres" - Float, Property size, 0-12
    "Total Living Area (sf)" - Int, Size of house, 0-6,007
-   "Bedrooms" - Int, NUmber of bedrooms, 1-10
+   "Bedrooms" - Int, Number of bedrooms, 1-10
    "Finished BsmtArea (sf)" - Int, Size of basement, 10-6,496
    "LotArea (sf)" - Int, Size of lot, 0-523,228
    "AC" - Boolean, If airconditioned
