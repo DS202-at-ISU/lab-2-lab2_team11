@@ -34,4 +34,4 @@ you are done with your submission.
    "AC" - Boolean, If airconditioned
    "FirePlace" - Boolean, If has fireplace
    "Neighborhood" - , Name of neighborhood
-2. Our variable of special interest is bedrooms, we are focusing on if the number of bedrooms affects the sale price on the house.
+2. Our variable of special interest is year built. 
