@@ -148,6 +148,7 @@ ames %>% group_by(Bedrooms) %>%
 ```
 
     ## Warning: Removed 1 rows containing non-finite values (`stat_count()`).
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ```{r}
 #4 -Emilie Butler
@@ -164,7 +165,6 @@ ames %>% group_by(AC) %>%
 
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 Whether a house has AC is a categorical variable that is either yes or no. A majority of houses have AC. 
 
