@@ -7,6 +7,7 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
 # Lab report #1
@@ -28,7 +29,8 @@ library(classdata)
 #1. Inspect the first few lines of the data set.seed
 
 head(ames)
-#names(ames)
+summary(ames)
+names(ames)
 #df = ames
 #df[,"Sale Price"]
 #summary(df)
@@ -37,7 +39,7 @@ head(ames)
 ```{r}
 #Is there a variable of special interest or focus
 
-#We chose bedrooms
+#Our variable of special interest is year built
 
 
 ```
@@ -48,12 +50,28 @@ head(ames)
 library(ggplot2)
 ggplot(data = ames, aes(x = YearBuilt)) +
   geom_histogram(binwidth = 1, fill = "skyblue", color = "black") +
-  xlim(1850, 2024) +
+  xlim(1850, 2022) +
   labs(
     x = "Year Built",
     y = "Frequency",
     title = "Histogram of Year Built in Ames Dataset"
   )
+```
+
+```{r}
+#4 -Alexa Elliott
+#Bedroom :
+colnames(ames)[colnames(ames) == "Sale Price"] <- "SalePrice"
+
+ames %>% group_by(Bedrooms) %>% 
+  summarise(
+    avg_saleprice = mean(SalePrice, na.rm = TRUE)
+  ) %>%
+  ggplot(aes(x = Bedrooms, weight = avg_saleprice)) +
+  geom_bar() +
+  scale_x_continuous(breaks = 0:10)
+
+
 ```
 
 
