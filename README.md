@@ -149,4 +149,22 @@ ames %>% group_by(Bedrooms) %>%
 
     ## Warning: Removed 1 rows containing non-finite values (`stat_count()`).
 
+```{r}
+#4 -Emilie Butler
+#AC :
+colnames(ames)[colnames(ames) == "Sale Price"] <- "SalePrice"
+
+ames %>% group_by(AC) %>% 
+  summarise(
+    avg_saleprice = mean(SalePrice, na.rm = TRUE)
+  ) %>%
+  ggplot(aes(x = AC, weight = avg_saleprice)) +
+  geom_bar() 
+
+
+```
+
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+Whether a house has AC is a categorical variable that is either yes or no. A majority of houses have AC. 
+
