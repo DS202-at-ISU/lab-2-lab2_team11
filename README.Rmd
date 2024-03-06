@@ -23,6 +23,7 @@ Submit a link to your repository on Canvas (only one submission per team) to sig
 library(classdata)
 
 ?ames
+
 ```
 
 ```{r}
@@ -34,6 +35,7 @@ names(ames)
 #df = ames
 #df[,"Sale Price"]
 #summary(df)
+ames
 
 ```
 ```{r}
@@ -74,4 +76,21 @@ ames %>% group_by(Bedrooms) %>%
 
 ```
 
+```{r}
+#4 -Gavin Anderson
+#Fireplace
+colnames(ames)[colnames(ames) == "Sale Price"] <- "SalePrice"
+Ames_by_Fireplace<-ames %>% group_by(FirePlace)%>%summarise(
+    avg_saleprice = mean(SalePrice, na.rm = TRUE)
+  ) 
+
+
+  ggplot(Ames_by_Fireplace,aes(x =FirePlace , weight = avg_saleprice)) +
+  geom_bar() 
+    
+
+  
+Ames_by_Fireplace
+
+```
 
